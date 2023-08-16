@@ -2,11 +2,26 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from './pages/Home/Home';
 import { Page404 } from './pages/Page404/Page404';
-import { dataFeature } from './data/dataFeature';
+import { useEffect, useState } from 'react';
 import { Feature } from './pages/Feature/Feature';
 
 function App() {
-  console.log(dataFeature);
+  const [dataFeature, setDataFeature] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3001/api/datafeature', {
+      method: 'GET',
+      headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+      },
+      credentials: 'include',
+      }).then(res => res.json())
+      .then(fetchedData => {
+        setDataFeature(fetchedData);
+      })
+      .catch(err => console.error(err));
+  }, []);
 
   return (
     

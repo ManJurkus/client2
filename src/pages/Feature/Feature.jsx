@@ -4,6 +4,7 @@ import { BiCircle } from 'react-icons/bi';
 
 export function Feature({data}) {
 
+
     return (
         <div className={style.featurePage}>
           {/* <div >{data.icon}</div> */}

@@ -1,5 +1,4 @@
 export const dataFeature = [
-    
 
     {
       id:1,
