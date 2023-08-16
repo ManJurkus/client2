@@ -1,0 +1,13 @@
+.homePage {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%; 
+}

@@ -1,0 +1,21 @@
+.featurePage{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.img {
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 50%;
+   
+}
+
+.bubble {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
