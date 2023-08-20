@@ -9,5 +9,11 @@
 .logo {
     border-radius: 10px;
     max-width: 400px;
-    width: 100%; 
+    width: 100px; 
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
